@@ -9,6 +9,10 @@
 # General
 --------------------------------------------------------------*/
 @font-face {
+    font-family: BahijBold;
+    src: url("../fonts/BAHIJ_THESANSARABIC-BOLD.TTF");
+}
+@font-face {
     font-family: Bahij;
     src: url("../fonts/BAHIJ THESANSARABIC-PLAIN.TTF");
 }
@@ -156,9 +160,9 @@ h6,
   max-height: 120px;
 }
 
-.scrolled-offset {
+/* .scrolled-offset {
   margin-top: 70px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -189,7 +193,7 @@ h6,
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Bahij", "Open Sans", sans-serif;
+  font-family: "BahijBold", "Bahij", "Open Sans", sans-serif;
   font-size: 15px;
   color: #5c768d;
   white-space: nowrap;
@@ -412,7 +416,7 @@ h6,
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(13, 30, 45, 0.6);
+  /* background-color: rgba(13, 30, 45, 0.6); */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -439,6 +443,10 @@ h6,
   text-align: right;
 }
 
+#banner-vertical {
+  display: none;
+}
+
 @media (max-width: 992px) {
 
   #hero,
@@ -448,6 +456,15 @@ h6,
 
   #hero .carousel-content.container {
     padding: 0 50px;
+  }
+
+  #banner-vertical {
+    display: initial;
+    width: 500px;
+  }
+
+  #banner-horizontal {
+    display: none;
   }
 }
 
@@ -545,6 +562,17 @@ h6,
   }
 }
 
+@media (max-width: 400px) {
+  #hero .carousel-item {
+    background-position: initial;
+  }
+
+  #banner-vertical {
+    display: initial;
+    width: 300px;
+  }
+}
+
 @media (min-width: 1024px) {
   #hero p {
     width: 60%;
@@ -553,6 +581,10 @@ h6,
   #hero .carousel-control-prev,
   #hero .carousel-control-next {
     width: 5%;
+  }
+
+  #banner-horizontal {
+    height: 300px;
   }
 }
 
@@ -640,9 +672,9 @@ section {
   padding-bottom: 30px;
 }
 
-.about .container {
+/* .about .container {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
-}
+} */
 
 .about .video-box img {
   padding: 15px 0;
@@ -810,6 +842,17 @@ section {
     opacity: 0;
   }
 }
+
+/*--------------------------------------------------------------
+# Banner 3
+--------------------------------------------------------------*/
+
+.banner-3 {
+  /* padding: 40px; */
+  /* add background image to corner bottom left */
+  background: url(../img/banner-3-bg.png) no-repeat bottom left #1c5c93;
+}
+
 
 /*--------------------------------------------------------------
 # About Lists

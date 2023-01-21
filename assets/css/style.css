@@ -41,6 +41,7 @@ h5,
 h6,
 .font-primary {
   font-family: "Bahij", sans-serif;
+  color: #0F497B;
 }
 
 /*--------------------------------------------------------------
@@ -414,6 +415,12 @@ h6,
   overflow: hidden;
 }
 
+#hero h1 {
+  font-family: "BahijBold";
+  font-size: 35px;
+  color: white;
+}
+
 #hero .carousel-item::before {
   content: "";
   /* background-color: rgba(13, 30, 45, 0.6); */
@@ -549,13 +556,17 @@ h6,
 }
 
 @media (max-width: 768px) {
+  .section-title h1 {
+    font-family: "Bahij" !important;
+    font-size: 30px !important;
+  }
+
   #hero h2 {
     font-size: 28px;
   }
 }
 
 @media (max-height: 500px) {
-
   #hero,
   #hero .carousel-item {
     height: 120vh;
@@ -871,10 +882,16 @@ section {
 --------------------------------------------------------------*/
 .about-lists {
   padding: 40px;
+  background: url(../img/values/bg.png) no-repeat bottom left;
+  background-size: contain;
 }
 
 .about-lists .row {
   overflow: hidden;
+}
+
+.about-lists h1 {
+ color: #0F497B;
 }
 
 .about-lists .content-item {
@@ -903,6 +920,11 @@ section {
   font-size: 15px;
   margin: 0;
   padding: 0;
+}
+
+.about-lists img {
+  -webkit-filter: drop-shadow(0px 0px 15px rgba(104, 104, 104, 0.2));
+  filter: drop-shadow(0px 0px 15px rgba(104, 104, 104, 0.2));
 }
 
 @media (max-width: 768px) {

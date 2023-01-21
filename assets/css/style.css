@@ -605,7 +605,19 @@ section {
   padding-bottom: 30px;
 }
 
+.section-title h1 {
+  font-family: "BahijBold";
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  display: inline-block;
+  color: #0F497B;
+  border-bottom: #3EBBA3 5px solid;
+}
+
 .section-title h2 {
+  font-family: "BahijBold";
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -850,7 +862,7 @@ section {
 .banner-3 {
   /* padding: 40px; */
   /* add background image to corner bottom left */
-  background: url(../img/banner-3-bg.png) no-repeat bottom left #1c5c93;
+  background: url(../img/banner-3-bg.png) no-repeat bottom right #1c5c93;
 }
 
 

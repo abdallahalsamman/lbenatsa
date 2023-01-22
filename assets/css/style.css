@@ -42,6 +42,7 @@ h6,
 .font-primary {
   font-family: "Bahij", sans-serif;
   color: #0F497B;
+  font-weight: lighter;
 }
 
 /*--------------------------------------------------------------
@@ -108,7 +109,7 @@ h6,
 }
 
 #topbar .contact-info i {
-  color: #428bca;
+  color: #3fbda4;
   line-height: 0;
   margin-right: 5px;
 }
@@ -534,7 +535,7 @@ h6,
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bahij", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -558,7 +559,8 @@ h6,
 @media (max-width: 768px) {
   .section-title h1 {
     font-family: "Bahij" !important;
-    font-size: 30px !important;
+    font-size: 40px !important;
+    font-weight: lighter !important;
   }
 
   #hero h2 {
@@ -594,9 +596,9 @@ h6,
     width: 5%;
   }
 
-  #banner-horizontal {
+  /* #banner-horizontal {
     height: 300px;
-  }
+  } */
 }
 
 /*--------------------------------------------------------------
@@ -963,7 +965,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Bahij", sans-serif;
   font-size: 14px;
 }
 
@@ -1329,7 +1331,7 @@ section {
 # Contact Us
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444;
+  color: #0f497b;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
@@ -1339,15 +1341,15 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #428bca;
+  color: #0f497b;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #9eccf4;
+  border: 2px dotted #0f497b;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #666;
+  color: #0f497b;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1463,16 +1465,16 @@ section {
 }
 
 #footer {
-  background: #587187;
+  background: #0F497B;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #5c768d;
-  border-top: 1px solid #768fa6;
-  border-bottom: 1px solid #67839c;
+  background: #0F497B;
+  border-top: 1px solid #0F497B;
+  border-bottom: 1px solid #0F497B;
   padding: 60px 0 30px 0;
 }
 
@@ -1492,14 +1494,21 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Bahij", sans-serif;
   color: #fff;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #768fa6;
+  background: #276fae;
   color: #fff;
   line-height: 1;
   padding: 8px 0;

@@ -45,6 +45,10 @@ h6,
   font-weight: lighter;
 }
 
+img.pulse:hover {
+    -webkit-animation: pulse 1.5s;
+    animation: pulse 1.5s;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -565,6 +569,20 @@ h6,
 
   #hero h2 {
     font-size: 28px;
+  }
+
+  section.saudiflag {
+    height: 363px !important;
+  }
+
+  .saudiflag-specialized {
+    height: 100px;
+    width: 300px;
+  }
+
+  #hero .carousel-item.saudiflag {
+    height: 363px !important;
+    background-size: 768px;
   }
 }
 

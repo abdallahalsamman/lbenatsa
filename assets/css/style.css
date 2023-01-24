@@ -1516,13 +1516,6 @@ section {
   color: #fff;
 }
 
-.anchor {
-    display: block;
-    position: relative;
-    top: -150px;
-    visibility: hidden;
-}
-
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;

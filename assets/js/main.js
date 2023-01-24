@@ -65,9 +65,14 @@
    */
   const scrollto = (el) => {
     let header = select('#header')
-    let offset = header.offsetHeight
+    
+    let offset = header.offsetHeight * 2
+    if (header.classList.contains('fixed-top')) {
+      offset = header.offsetHeight
+    }
 
-    let elementPos = select(el).offsetTop
+    let elementPos = select(el).getBoundingClientRect().top + window.scrollY
+
     window.scrollTo({
       top: elementPos - offset,
       behavior: 'smooth'

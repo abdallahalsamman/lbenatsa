@@ -72,9 +72,15 @@
     }
 
     let elementPos = select(el).getBoundingClientRect().top + window.scrollY
+    let screenHeight = window.innerHeight
+
+    let scrollFromTop = elementPos - offset - (screenHeight * 0.3)
+    if (el == "#planning") {
+      scrollFromTop = elementPos - offset
+    }
 
     window.scrollTo({
-      top: elementPos - offset,
+      top: scrollFromTop,
       behavior: 'smooth'
     })
   }
